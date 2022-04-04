@@ -1,0 +1,22 @@
+#myModal::backdrop{
+    background: #333;
+    opacity: 60%;
+}
+
+@media only screen and (max-width: 770px) {
+    .cardInner{
+        flex-direction: column !important;
+    }
+
+    .spanss{
+        justify-content: center !important;
+        font-size: 70% !important;
+    }
+
+
+
+    .allElem{
+        font-size: 75% !important;
+    }
+
+}

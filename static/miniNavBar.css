@@ -1,0 +1,86 @@
+/* :root{
+    --bg: rgb(33,37,41);
+    --otherBg: #707981;
+} */
+
+
+#myNavOut{
+    z-index: 3;
+    position: sticky;
+    top: 0;
+}
+
+
+
+#myNav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--otherBg);
+    padding: 1rem;
+    border: 2px solid var(--otherBg);
+    flex-wrap: wrap;
+}
+
+/* .myNavTagsOut{
+    margin: 0 1rem;
+    padding: 1rem;
+} */
+
+.myNavTags{
+    text-decoration: none;
+    color: #000;
+    position: relative;
+    transition: all ease-in-out 300ms;
+}
+
+.myNavTags::after{
+    transition: all ease-in-out 300ms;
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 12rem;
+    /* top: 0; */
+    left: 0;
+    top: 2rem;
+
+}
+.myNavTags::before{
+    transition: all ease-in-out 300ms;
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 12rem;
+    /* top: 0; */
+    right: 0;
+    top: 2rem;
+
+}
+
+.myNavTagsOut:hover .myNavTags::after {
+    width: 51%;
+
+}
+.myNavTagsOut:hover .myNavTags::before{
+    width: 51%;
+
+}
+
+.myNavTagsOut:hover .myNavTags{
+    color: white;
+    top: 5px;
+}
+
+
+.profileActive{
+    top: 5px;
+    color: white;
+}
+
+
+
+

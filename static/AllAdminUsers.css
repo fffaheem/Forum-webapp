@@ -1,0 +1,83 @@
+
+
+html{
+    overflow-x: hidden !important;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+
+.userImg{
+    /* width: calc(8vw + 2rem); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.userImg > img{
+    width: 10rem;
+}
+
+.userCardOuter{
+    display: flex;
+    flex-direction: row;
+}
+
+.userCard{
+    position: relative;
+} 
+
+.userCard > div{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.card-text{
+    margin: 1rem 2rem 1rem 0rem;
+}
+
+
+@media only screen and (max-width: 988px) {
+    html{
+        font-size: 75%;
+    }
+} 
+
+@media only screen and (max-width: 770px) {
+    .userImg > img{
+        width: 8rem;
+    }
+    .userCard > div{
+        position: absolute;
+        bottom: 15px;
+        right: 15px;
+        top: initial;
+        max-width: 75px;
+        word-break: break-all;
+    }
+
+    .bg-info{
+        width: inherit;
+        /* white-space: pre-wrap !important; */
+    }
+} 
+
+
+.cancelSearch:hover{
+    color: red;
+    transform: scale(1.25);
+}
+
+#adminScroll{
+    height: 70vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#adminForm{
+    margin-top: 6.5rem;
+    margin-bottom: 8.5rem;
+}

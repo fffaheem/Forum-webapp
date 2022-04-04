@@ -1,0 +1,61 @@
+.htmlBlack{
+    position: relative;
+    overflow: hidden;
+}
+
+.htmlBlack::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 80%;
+    z-index: 5;
+}
+
+.modalQues{
+    z-index: 7;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 65vw;
+
+
+
+}
+
+.modalQues #modalContent{
+    
+    height:calc(100vh - 50vh);
+
+}
+
+
+
+
+
+
+@media only screen and (max-width:988px){
+    .modalQues{
+        width: 90vw;
+    }
+
+    body{
+        overflow-x: hidden;
+    }
+
+    html{
+        overflow-x: hidden;
+    }
+
+}
+
+@media only screen and (max-height: 300px){
+    .modalQues #modalContent{
+    
+        height:calc(100vh - 70vh);
+    
+    }
+    
+}

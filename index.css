@@ -1,0 +1,36 @@
+html{
+    overflow-x: hidden;
+}
+
+body{
+    overflow-x: hidden;
+}
+@media only screen and (max-width: 988px) {
+    html{
+        font-size: 75%;
+    }
+} 
+
+
+.spaceRetain{
+    white-space: pre-wrap;
+}
+
+
+.card-header{
+    cursor: pointer;
+}
+
+.card-header > .link{
+    text-decoration: none;
+    color: inherit;
+}
+
+.cancelSearch:hover{
+    color: red;
+    transform: scale(1.25);
+}
+
+.link:hover{
+    color: #0d6efd !important;
+}

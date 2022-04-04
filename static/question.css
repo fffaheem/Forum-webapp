@@ -1,0 +1,157 @@
+/* #answerFormOut{
+    width: 50%;
+}
+
+
+*/
+
+.spaceRetainer{
+    white-space: pre-wrap;
+}
+
+
+.repReadMore{
+    cursor: pointer;
+
+}
+.repReadMore:hover{
+    color: white !important;
+    
+}
+
+.replyTable{
+    overflow:auto;
+    height:20vh;
+    min-height:11rem;
+}
+
+@media only screen and (max-width: 988px) {
+    html{
+        font-size: 75%;
+    }
+} 
+    
+#sortOut{
+    display:flex;
+    justify-content:end;
+    padding: 0 5rem;
+}
+/* #sortBy{
+    width:25%;
+} */
+
+#question,
+#answer,
+.replies{
+    position: relative;
+}
+
+#reportQues{
+    font-size: 1.5rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+    user-select: none;
+}
+
+#reportAns{
+    font-size: 1.5rem;
+    position: absolute;
+    top: 0.25rem;
+    right: 1rem;
+    cursor: pointer;
+    user-select: none;
+}
+
+.reportRep{
+    font-size: .75rem;
+    position: absolute;
+    top: 0.25rem;
+    right: 1rem;
+    cursor: pointer;
+    user-select: none;
+}
+
+.myTable{
+    margin: .1rem 0;
+}
+
+.myTable>div{
+    padding: .2rem 1rem;
+}
+.myTable:nth-child(odd) {
+    background: #111519;
+}
+.myTable:nth-child(even) {
+    background: #212529;
+}
+
+
+
+@media only screen and (max-width: 988px) {
+    /* #sortBy{
+         width: 100%;
+    } */
+    #sortOut{
+        display:block;
+        padding:0 0.75rem;
+    }
+
+    #reportQues{
+        font-size: 1rem;
+    }
+    #reportAns{
+        font-size: 1rem;
+        top: 0.4rem;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+
+    #reportAns{
+        font-size: 1rem;
+        top: .5rem;
+        width: 15%;
+        text-align: center;
+        right: 0;
+
+    }
+    #reportAns small{
+        /* width: 1px; */
+        font-size: .7rem !important;
+        line-height: 0;
+
+    }
+
+    .reportRep{
+        top: 0.5rem;
+        right: 1rem;
+
+    }
+
+    .reply-replies{
+        font-size: 10px !important;
+    }
+    .reply-mssg{
+        font-size: 8px !important;
+    }
+    .ans-head{
+        font-size: 9px;
+
+    }
+    .answerContent{
+        font-size: 11px;
+    }
+}
+
+/* .card-header{
+    cursor: pointer;
+}
+
+*/
+.links{
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+} 

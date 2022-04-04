@@ -1,0 +1,74 @@
+
+#userMainImg > a{
+    width: inherit;
+}
+#userMainImg > a > img{
+    width: inherit;
+}
+
+#userMainImgToggler,
+#userMainImg{
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 3px solid #198553;
+    /* border-radius: 1rem; */
+    border-radius: 100%;
+    /* padding: .25rem 1.5rem; */
+    /* padding: 1.25rem; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+
+    position: relative;
+
+    user-select: none;
+}
+/*
+#userMainImgToggler::before,
+#userMainImg::before{
+   position: absolute;
+   content: "";
+   background-color: white;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   z-index: 1;
+}
+*/
+#userMainImgToggler > a{
+    width: inherit;
+}
+#userMainImgToggler > a > img{
+    width: inherit;
+}
+
+
+/* secret Link */
+
+
+#secretLink{
+    border: 4px solid #E83A14;
+    margin: 0 2rem;;
+    padding: 0.5rem 1.25rem;
+    border-radius: 1rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 0.4rem;  
+    font-size: 0.6rem;  
+    background-color: #630606;
+    
+    
+    position: absolute;
+    transform: translateY(-40rem);
+    z-index: 5;
+
+    transition: all ease-in 200ms ;
+}
+
+#secretLink:focus{
+    transform: translateY(4rem);
+}

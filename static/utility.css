@@ -1,0 +1,42 @@
+.spaceRetain{
+    white-space: pre-wrap;
+}
+
+.cancelSearch:hover{
+    color: red;
+    transform: scale(1.25);
+}
+
+.adminReadMore{
+    cursor: pointer;
+}
+
+.adminReadMore:hover{
+    color: blue;
+}
+
+.adminReadLess{
+    /* position: absolute;
+    right: 50px;
+    bottom: 70px;
+    margin-bottom: 10px; */
+    display: block;
+    margin: 1rem;
+}
+
+.adminCard{
+    flex-direction: row;
+}
+
+@media only screen and (max-width: 770px) {
+    .adminCard{
+        flex-direction: column;
+    }
+} 
+
+.cancelCorner{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 1rem;
+}

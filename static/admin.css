@@ -1,0 +1,14 @@
+#adminForm{
+    width: 50%;
+}
+
+@media only screen and (max-width : 995px){
+    #adminForm{
+        width: 100%;
+    }
+}
+@media only screen and (max-width : 395px){
+    #adminForm{
+        padding: 3rem 1rem !important;
+    }
+}
