@@ -36,19 +36,19 @@ if($boolLoggedIn){
                 $sql = "DELETE from replies where `username` = '$username'";
                 $result = $conn->query($sql);
                 
-                $sql = "DELETE from question_like where `username` = '$username'";
+                $sql = "DELETE from question_like where `likedby` = '$username'";
                 $result = $conn->query($sql);
                 
-                $sql = "DELETE from answer_like where `username` = '$username'";
+                $sql = "DELETE from answer_like where `likedby` = '$username'";
                 $result = $conn->query($sql);
                 
-                $sql = "DELETE from report_ans where `username` = '$username'";
+                $sql = "DELETE from report_ans where `r_user` = '$username'";
                 $result = $conn->query($sql);
                 
-                $sql = "DELETE from report_ques where `username` = '$username'";
+                $sql = "DELETE from report_ques where `r_user` = '$username'";
                 $result = $conn->query($sql);
                 
-                $sql = "DELETE from report_reply where `username` = '$username'";
+                $sql = "DELETE from report_reply where `report_user` = '$username'";
                 $result = $conn->query($sql);
                 
                 $sql = "DELETE from allusers where `username` = '$username'";
