@@ -21,7 +21,7 @@ if($boolLoggedin){
         $sql = "SELECT * FROM `admins` WHERE `email` = '$email';";
         $result = $conn->query($sql);
         $aff = $conn->affected_rows;
-        if($aff > 1){
+        if($aff > 0){
             echo "yes";
 
         }else{
